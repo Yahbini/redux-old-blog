@@ -1,13 +1,13 @@
-import { configureStore } from "@reduxjs/toolkit";
-import blogReducer from "pages/blog/blog.reducer";
+import { configureStore } from '@reduxjs/toolkit'
+import blogReducer from 'pages/blog/blog.reducer'
 
 export const store = configureStore({
-    reducer: {
-        blogContent: blogReducer
-    }
+  reducer: {
+    blogContent: blogReducer
+  }
 })
 
-// Lấy RootState và AppDispatch từ store của chúng ta 
+// Lấy RootState và AppDispatch từ store của chúng ta
 // phục vụ cho typescript
 export type RootState = ReturnType<typeof store.getState>
 
